@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-italic-serif: "Newsreader", "Playfair Display", Georgia, serif;
+
+  --color-canvas: #FFFFFF;
+  --color-primary: #FF5E13;
+  --color-primary-hover: #E04D09;
+  --color-secondary: #FF6B2B;
+  --color-tertiary: #EAE5DC;
+  --color-neutral: #111827;
+  --color-slate-dark: #141B2B;
+  --color-card-border: #EAE5DC;
+}
+
+@layer base {
+  * {
+    border-color: #EAE5DC;
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #141B2B;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Glassmorphism utilities */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #EAE5DC;
+  box-shadow: 0 10px 30px -10px rgba(17, 24, 39, 0.04), 0 20px 48px -12px rgba(255, 94, 19, 0.04);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -12px rgba(17, 24, 39, 0.08), 0 24px 48px -12px rgba(255, 94, 19, 0.12);
+  border-color: rgba(255, 94, 19, 0.3);
+}
+
+/* Ambient halo glow behind Tamara's portrait */
+.ambient-glow {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 107, 43, 0.18) 0%,
+    rgba(255, 94, 19, 0.08) 40%,
+    rgba(255, 255, 255, 0) 72%
+  );
+}
+
+/* Audio waveform animation bar */
+@keyframes wavePulse {
+  0%, 100% {
+    transform: scaleY(0.3);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.audio-bar-playing {
+  animation: wavePulse 1.2s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCE2F7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5E13;
+}
