@@ -284,9 +284,7 @@ export default function CaseStudies({ onRequestCaseFile }) {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-[#615E57]">
                     Workflow Architecture (I-P-O Matrix)
                   </span>
-                  <span className="text-[10px] font-bold text-[#FF5E13] bg-[#FFECE5] px-2 py-0.5 rounded-full">
-                    Input ➔ Process ➔ Output
-                  </span>
+
                 </div>
 
                 {/* 3 Step Interactive Buttons */}
@@ -361,8 +359,8 @@ export default function CaseStudies({ onRequestCaseFile }) {
                 Spearheaded offline-to-online activation across Bandung's highest-density high school districts, securing institutional approvals and student ambassador programs.
               </p>
 
-              {/* 3 Highlight Stat Boxes */}
-              <div className="grid grid-cols-3 gap-3 mb-5">
+              {/* Highlight Stat Boxes */}
+              <div className="grid grid-cols-2 gap-3 mb-5">
                 <div className="bg-white/80 p-3.5 rounded-2xl border border-[#EAE5DC] text-center hover:border-[#FF5E13]/40 transition-colors">
                   <div className="font-serif font-bold text-xl sm:text-2xl text-[#111827] tracking-tight">
                     25<span className="text-xs font-sans text-[#78716C]">/25</span>
@@ -380,15 +378,6 @@ export default function CaseStudies({ onRequestCaseFile }) {
                     Student Reach
                   </div>
                 </div>
-
-                <div className="bg-white/80 p-3.5 rounded-2xl border border-[#EAE5DC] text-center hover:border-[#FF5E13]/40 transition-colors">
-                  <div className="font-serif font-bold text-xl sm:text-2xl text-[#111827] tracking-tight">
-                    88<span className="text-sm font-sans">%</span>
-                  </div>
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#615E57] mt-1">
-                    First-Order Rate
-                  </div>
-                </div>
               </div>
 
               {/* Interactive Funnel Strategy Breakdown */}
@@ -397,9 +386,7 @@ export default function CaseStudies({ onRequestCaseFile }) {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-[#615E57]">
                     Execution Funnel Phases
                   </span>
-                  <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                    Bandung Hub Verified
-                  </span>
+
                 </div>
 
                 <div className="grid grid-cols-3 gap-1.5 text-[11px] mb-3">
