@@ -103,7 +103,7 @@ export default function Navbar({ onContactClick, onResumeClick }) {
             className="w-8 h-8 rounded-full border border-[#EAE5DC] overflow-hidden hover:ring-2 hover:ring-[#FF5E13]/50 transition-all cursor-pointer focus:outline-none"
           >
             <img
-              src="./tamara_portrait.jpg"
+              src="./tamara.jpg"
               alt="Tamara Wongso"
               className="w-full h-full object-cover object-top"
             />

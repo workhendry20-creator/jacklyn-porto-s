@@ -41,7 +41,7 @@ export default function Hero({ onExploreClick, onResumeClick }) {
           {/* Profile Card Frame */}
           <div className="relative rounded-[2rem] overflow-hidden border border-[#EAE5DC]/80 shadow-[0_20px_50px_rgba(17,24,39,0.08)] bg-white/40 backdrop-blur-sm aspect-[3/4]">
             <img
-              src="./tamara_portrait.jpg"
+              src="./tamara.jpg"
               alt="Tamara Wongso - B2B Account Executive & Strategic Marketer"
               className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
             />
