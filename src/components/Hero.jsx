@@ -17,10 +17,6 @@ export default function Hero({ onExploreClick, onResumeClick }) {
           <span className="text-[10px] sm:text-[11px] font-bold tracking-widest text-[#111827] uppercase">
             Available for new opportunities
           </span>
-          <span className="text-[#EAE5DC]">|</span>
-          <span className="text-[10px] sm:text-[11px] font-semibold text-[#FF5E13] tracking-wider uppercase">
-            2025 Advisory
-          </span>
         </div>
 
         {/* Headline Typographic Structure */}

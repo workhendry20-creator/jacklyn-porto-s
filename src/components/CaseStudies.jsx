@@ -27,52 +27,46 @@ export default function CaseStudies({ onRequestCaseFile }) {
   const flowStages = [
     {
       stage: 'STAGE 01',
-      title: 'Targeted Meta Inbound',
-      desc: 'Segmented B2B creative sets targeting FMCG Procurement & Packaging Directors.',
-      metricLabel: 'CAC Reduction',
-      metricVal: '—38%',
-      details: {
-        channel: 'Meta Ads Manager + LinkedIn ABM',
-        playbook: 'Audience segmented by industrial SIC codes, containerboard specifications, and monthly volume demand (> 100k units).',
-        sla: 'Live routing directly to dedicated account representative within business hours.',
-      },
+      title: 'Paid Ads',
+      desc: 'Digital advertising and customer acquisition campaigns for B2B packaging solutions.',
+      subMetric: 'Meta Paid Campaigns',
+      details: 'Strategized and managed inbound digital campaigns across Meta ads platform, targeting enterprise procurement leads.',
     },
     {
       stage: 'STAGE 02',
-      title: 'Lead Qualification & SLA',
-      desc: '15-minute response SLA protocol with custom automated technical questionnaire.',
-      metricLabel: 'Qual. Conversion',
-      metricVal: '69%',
-      details: {
-        channel: 'HubSpot CRM + WhatsApp Business API',
-        playbook: 'Immediate dispatch of technical spec intake (flute type, GSM, burst index, delivery cadence). Auto-filters unqualified leads.',
-        sla: '15-minute response protocol implemented across local & export commercial teams.',
-      },
+      title: 'Inquiry',
+      desc: 'Receiving and processing hundreds of incoming local and international client inquiries.',
+      subMetric: 'High-Volume Handling',
+      details: 'Handled incoming customer inquiries, catalog requests, and initial technical screening across local and overseas buyers.',
     },
     {
       stage: 'STAGE 03',
-      title: 'Spec Alignment & Trial',
-      desc: 'Direct sample proofing, lab compression tests, and batch spec confirmation.',
-      metricLabel: 'Sampling Speed',
-      metricVal: '4.2 Days',
-      details: {
-        channel: 'Factory QA Lab + Chinese Mill Direct',
-        playbook: 'Parallel validation of grammage, edge crush test (ECT), and box compression test (BCT) with rapid 72-hour physical trial delivery.',
-        sla: 'Sample turnaround compressed from 14 days to under 4.5 days.',
-      },
+      title: 'Client Handling',
+      desc: 'Understanding customer requirements, providing product information, offers, and cross-functional coordination.',
+      subMetric: 'Consultation & Bridge',
+      details: 'Delivered consultative proposals, technical spec reviews, and seamless coordination between commercial and production teams.',
     },
     {
       stage: 'STAGE 04',
-      title: 'Contract & Retention',
-      desc: 'Annual procurement framework with automated recurring quarterly restock triggers.',
-      metricLabel: 'Annual Retention',
-      metricVal: '91%',
-      details: {
-        channel: 'SAP ERP Enterprise Contract',
-        playbook: 'Volume-tiered price locks, buffer stock consignment agreements, and scheduled automated PO generation for ongoing SKU replenishment.',
-        sla: 'Quarterly review milestones with 91% annualized renewal retention.',
-      },
+      title: 'Pre Order',
+      desc: 'Coordinating order specs, technical requirements, and production alignment with internal teams.',
+      subMetric: 'Account Conversion',
+      details: 'Coordinated order execution, production scheduling, sample verification, and factory alignment with internal mill divisions.',
     },
+    {
+      stage: 'STAGE 05',
+      title: 'Repeat Order',
+      desc: 'Following up on accounts, supporting account expansion, and securing recurring business.',
+      subMetric: 'Rp 229.65M Total Pipeline',
+      details: 'Executed proactive follow-ups, account retention, and regular repeat PO cycles totaling Rp 229.65M in commercial value.',
+    },
+  ];
+
+  const contributionPoints = [
+    'Handled customer inquiries and detailed specification requirements.',
+    'Supported customer conversion, follow-up, and account expansion.',
+    'Coordinated across marketing, sales, and production teams on order execution.',
+    'Bridged Chinese-Indonesian business communication by translating technical specifications into production formulas.',
   ];
 
   const glossaryTerms = [
@@ -116,37 +110,37 @@ export default function CaseStudies({ onRequestCaseFile }) {
                 </span>
               </div>
               <h3 className="font-serif font-bold text-2xl sm:text-3xl text-[#111827] tracking-tight mb-3">
-                High-Conversion Inbound Ads to Enterprise Packaging Contracts
+                Turn Paid Traffic Into Business Conversations
               </h3>
               <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed">
-                Restructured inbound qualification channels to bridge Meta paid campaigns with high-touch B2B consultation, eliminating cold drop-offs and accelerating enterprise sales cycles.
+                Bridging digital paid campaigns with comprehensive B2B client consultation, high-volume inquiry handling, and repeat commercial contracts across local and international enterprises.
               </p>
             </div>
 
             {/* Right Top Impact Metrics */}
-            <div className="flex items-center gap-6 sm:gap-8 shrink-0 bg-white/60 p-4 rounded-2xl border border-[#EAE5DC]/80 self-start">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6 shrink-0 bg-white/90 p-4 sm:p-5 rounded-2xl border border-[#EAE5DC] self-start shadow-xs">
               <div>
-                <div className="font-serif font-bold text-3xl sm:text-4xl text-[#FF5E13] tracking-tight">
-                  42<span className="text-2xl">%</span>
+                <div className="font-serif font-bold text-2xl sm:text-3xl text-[#FF5E13] tracking-tight">
+                  Rp 229.65<span className="text-xl font-serif">M</span>
                 </div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-[#615E57] mt-0.5">
-                  Repeat Client Rate
+                <div className="text-[10px] font-bold uppercase tracking-wider text-[#615E57] mt-0.5 max-w-[210px] leading-tight">
+                  Revenue from Initial POs to Repeat Orders (Jan-Jul)
                 </div>
               </div>
-              <div className="w-[1px] h-10 bg-[#EAE5DC]" />
+              <div className="hidden sm:block w-[1px] h-12 bg-[#EAE5DC]" />
               <div>
-                <div className="font-serif font-bold text-3xl sm:text-4xl text-[#111827] tracking-tight">
-                  3.8<span className="text-2xl font-serif">x</span>
+                <div className="font-serif font-bold text-2xl sm:text-3xl text-[#111827] tracking-tight">
+                  100s
                 </div>
-                <div className="text-[10px] font-bold uppercase tracking-wider text-[#615E57] mt-0.5">
-                  Pipeline Velocity
+                <div className="text-[10px] font-bold uppercase tracking-wider text-[#615E57] mt-0.5 max-w-[190px] leading-tight">
+                  Customer Inquiries Handled (Local & International)
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Interactive Flowchart Container */}
-          <div className="bg-[#F9FAFB]/80 border border-[#EAE5DC] rounded-2xl p-4 sm:p-6 mb-6">
+          {/* Interactive Flowchart Container (5-Stage Architecture) */}
+          <div className="bg-[#F9FAFB]/90 border border-[#EAE5DC] rounded-2xl p-4 sm:p-6 mb-6">
             <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#EAE5DC]">
               <div className="flex items-center gap-2">
                 <Layers size={14} className="text-[#FF5E13]" />
@@ -160,47 +154,47 @@ export default function CaseStudies({ onRequestCaseFile }) {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
                 </span>
                 <span className="text-[10px] font-semibold text-[#615E57]">
-                  Live Pipeline Architecture (Click any stage)
+                  5-Stage B2B Pipeline (Click stage for details)
                 </span>
               </div>
             </div>
 
-            {/* 4 Connected Stages */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {/* 5 Connected Stages */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
               {flowStages.map((st, index) => {
                 const isSelected = activeStage === index;
                 return (
                   <button
                     key={st.stage}
                     onClick={() => setActiveStage(index)}
-                    className={`text-left p-4 rounded-xl border transition-all duration-200 cursor-pointer ${
+                    className={`text-left p-3.5 sm:p-4 rounded-xl border transition-all duration-200 cursor-pointer flex flex-col justify-between ${
                       isSelected
                         ? 'bg-white border-[#FF5E13] shadow-[0_8px_20px_-6px_rgba(255,94,19,0.2)] ring-1 ring-[#FF5E13]'
-                        : 'bg-white/60 border-[#EAE5DC] hover:bg-white hover:border-[#FF5E13]/40'
+                        : 'bg-white/70 border-[#EAE5DC] hover:bg-white hover:border-[#FF5E13]/40'
                     }`}
                   >
-                    <div className="flex items-center justify-between mb-2">
-                      <span className={`text-[10px] font-bold tracking-wider ${isSelected ? 'text-[#FF5E13]' : 'text-[#A93800]'}`}>
-                        {st.stage}
-                      </span>
-                      {isSelected ? (
-                        <CheckCircle2 size={14} className="text-[#FF5E13]" />
-                      ) : (
-                        <span className="text-[10px] text-[#A8A29E]">0{index + 1}</span>
-                      )}
+                    <div>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <span className={`text-[10px] font-bold tracking-wider ${isSelected ? 'text-[#FF5E13]' : 'text-[#A93800]'}`}>
+                          {st.stage}
+                        </span>
+                        {isSelected ? (
+                          <CheckCircle2 size={13} className="text-[#FF5E13]" />
+                        ) : (
+                          <span className="text-[10px] text-[#A8A29E]">0{index + 1}</span>
+                        )}
+                      </div>
+                      <div className="font-bold text-xs sm:text-[13px] text-[#111827] mb-1.5 leading-snug">
+                        {st.title}
+                      </div>
+                      <p className="text-[11px] text-[#615E57] line-clamp-3 leading-relaxed mb-3">
+                        {st.desc}
+                      </p>
                     </div>
-                    <div className="font-bold text-xs sm:text-[13px] text-[#111827] mb-1.5 leading-snug">
-                      {st.title}
-                    </div>
-                    <p className="text-[11px] text-[#615E57] line-clamp-2 leading-relaxed mb-3">
-                      {st.desc}
-                    </p>
-                    <div className="pt-2 border-t border-[#F1EDE4] flex items-center justify-between">
-                      <span className="text-[10px] font-medium text-[#78716C]">
-                        {st.metricLabel}
-                      </span>
-                      <span className="text-xs font-bold text-[#FF5E13]">
-                        {st.metricVal}
+
+                    <div className="pt-2 border-t border-[#F1EDE4] mt-auto">
+                      <span className="inline-block text-[10px] font-semibold text-[#FF5E13] bg-[#FFECE5] px-2 py-0.5 rounded-full">
+                        {st.subMetric}
                       </span>
                     </div>
                   </button>
@@ -208,28 +202,38 @@ export default function CaseStudies({ onRequestCaseFile }) {
               })}
             </div>
 
-            {/* Active Stage Deep-Dive Expandable Panel */}
-            <div className="mt-4 pt-4 border-t border-[#EAE5DC] bg-white/80 rounded-xl p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div className="space-y-1">
+            {/* Key Contribution Points (Deep Dive Section) */}
+            <div className="mt-5 pt-5 border-t border-[#EAE5DC] bg-white rounded-xl p-5 border border-[#EAE5DC]/80 space-y-4">
+              <div className="flex items-center justify-between flex-wrap gap-2 pb-3 border-b border-[#F1EDE4]">
                 <div className="flex items-center gap-2">
-                  <span className="text-[11px] font-bold uppercase text-[#FF5E13]">
-                    Deep Dive • {flowStages[activeStage].stage}: {flowStages[activeStage].title}
+                  <span className="text-[11px] font-bold uppercase text-[#FF5E13] tracking-wider">
+                    Key Contribution Highlights
                   </span>
-                  <span className="text-[10px] bg-[#F9FAFB] px-2 py-0.5 rounded border border-[#EAE5DC] text-[#615E57]">
-                    {flowStages[activeStage].details.channel}
+                  <span className="text-[10px] bg-[#F9FAFB] px-2 py-0.5 rounded border border-[#EAE5DC] text-[#615E57] font-semibold">
+                    Verified CV & Operational Track Record
                   </span>
                 </div>
-                <p className="text-xs text-[#374151] leading-relaxed">
-                  {flowStages[activeStage].details.playbook}
-                </p>
+                <span className="text-[10px] text-[#78716C] font-semibold">
+                  Stage Focus: {flowStages[activeStage].stage} • {flowStages[activeStage].title}
+                </span>
               </div>
-              <div className="shrink-0 bg-[#F9FAFB] px-3.5 py-2 rounded-lg border border-[#EAE5DC] text-right">
-                <span className="text-[9px] uppercase font-bold text-[#78716C] block">
-                  SLA Benchmark
+
+              {/* 4 Official Contribution Points */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-xs text-[#374151]">
+                {contributionPoints.map((point, idx) => (
+                  <div key={idx} className="flex items-start gap-2.5 bg-[#F9FAFB] p-3 rounded-lg border border-[#EAE5DC]">
+                    <span className="text-[#FF5E13] font-bold text-sm leading-none mt-0.5">✓</span>
+                    <span className="leading-relaxed">{point}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Active Stage Detail */}
+              <div className="pt-1 text-xs text-[#615E57] flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2 bg-[#FAF7F2] p-3 rounded-lg border border-[#EAE5DC]/60">
+                <span className="font-bold text-[#111827] shrink-0">
+                  {flowStages[activeStage].title} Execution:
                 </span>
-                <span className="text-xs font-semibold text-[#111827]">
-                  {flowStages[activeStage].details.sla}
-                </span>
+                <span>{flowStages[activeStage].details}</span>
               </div>
             </div>
           </div>
@@ -241,7 +245,7 @@ export default function CaseStudies({ onRequestCaseFile }) {
               <span>Framework fully integrated into core sales operational procedures.</span>
             </div>
             <button
-              onClick={() => onRequestCaseFile('PT Alkindo Naratama Tbk - Inbound Ads to Enterprise Packaging')}
+              onClick={() => onRequestCaseFile('PT Alkindo Naratama Tbk - Turn Paid Traffic Into Business Conversations')}
               className="inline-flex items-center gap-1 font-semibold text-[#FF5E13] hover:text-[#A93800] transition-colors cursor-pointer group self-start sm:self-auto"
             >
               <span>Request Full Documentation Case File</span>
