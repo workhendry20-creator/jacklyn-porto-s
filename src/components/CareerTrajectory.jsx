@@ -11,15 +11,13 @@ export default function CareerTrajectory() {
   const experiences = [
     {
       id: 'alkindo',
-      role: 'Account Executive - Marketing and Sales (Local and Export)',
-      company: 'PT. Alkindo Naratama Tbk, Padalarang, West Java',
+      role: 'Marketing Export',
+      company: 'PT. Alkindo Naratama Tbk, West Java',
       period: 'July 2025 – Present',
-      location: 'Padalarang, West Java',
       desc: 'Managed high-volume B2B client communications across local and international customers, driving revenue exposure, supporting conversion and repeat orders, and bridging Chinese-Indonesian business communication.',
       skills: [
-        { label: 'B2B Marketing & Sales', featured: true },
+        { label: 'B2B Marketing & Sales', featured: false },
         { label: 'Client Handling', featured: false },
-        { label: 'Chinese-Indonesian Communication', featured: false },
         { label: 'Export Sales Support', featured: false },
         { label: 'Content Strategy', featured: false },
       ],

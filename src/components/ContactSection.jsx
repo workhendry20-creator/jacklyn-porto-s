@@ -83,7 +83,7 @@ export default function ContactSection({ onEmailCopied }) {
               <div className="flex items-center gap-2 mb-4">
                 <span className="w-2 h-2 rounded-full bg-[#FF5E13] animate-pulse"></span>
                 <span className="text-[11px] font-bold uppercase tracking-widest text-[#FF5E13]">
-                  Direct Advisory Booking Open
+                  Contact
                 </span>
               </div>
 
@@ -135,7 +135,7 @@ export default function ContactSection({ onEmailCopied }) {
             <div className="lg:col-span-5">
               <div className="bg-[#F9FAFB]/90 rounded-2xl p-5 sm:p-6 border border-[#EAE5DC]">
                 <div className="text-[10px] font-bold uppercase tracking-widest text-[#78716C] mb-4">
-                  Verified Professional Networks
+                  Let's Connect
                 </div>
 
                 <div className="space-y-3">
