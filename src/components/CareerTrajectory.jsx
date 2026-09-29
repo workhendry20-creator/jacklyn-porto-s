@@ -11,21 +11,24 @@ export default function CareerTrajectory() {
   const experiences = [
     {
       id: 'alkindo',
-      role: 'Account Executive (Local & Export)',
-      company: 'PT Alkindo Naratama Tbk',
-      period: '2025 — PRESENT',
-      desc: 'Managing key account retention and outbound enterprise packaging contracts across Southeast Asia. Spearheading cross-border technical alignment with Mandarin Chinese suppliers and North American client quality assurance teams.',
+      role: 'Account Executive - Marketing and Sales (Local and Export)',
+      company: 'PT. Alkindo Naratama Tbk, Padalarang, West Java',
+      period: 'July 2025 – Present',
+      location: 'Padalarang, West Java',
+      desc: 'Managed high-volume B2B client communications across local and international customers, driving revenue exposure, supporting conversion and repeat orders, and bridging Chinese-Indonesian business communication.',
       skills: [
-        { label: 'B2B Sales', featured: false },
-        { label: 'Export Documentation', featured: false },
-        { label: 'Mandarin Spec Coordination', featured: false },
-        { label: 'Key Account Management', featured: false },
-        { label: 'Rp 229M+ Exposure', featured: true },
+        { label: 'B2B Marketing & Sales', featured: true },
+        { label: 'Client Handling', featured: false },
+        { label: 'Chinese-Indonesian Communication', featured: false },
+        { label: 'Export Sales Support', featured: false },
+        { label: 'Content Strategy', featured: false },
       ],
       details: [
-        'Maintained and renewed major enterprise packaging procurement agreements spanning paper tube, core, and paper bag industrial lines.',
-        'Facilitated direct bilingual negotiations with Chinese raw material suppliers, reducing spec mismatch delays by 40%.',
-        'Coordinated with North American QA teams to align tensile standards and FSC/PEFC sustainability compliance certifications.',
+        'Managed high-volume client communications across international and local customers, handling hundreds of inquiries and supporting sales conversion, customer relationships, and repeat business; contributed to Rp229.65M in revenue from initial purchase orders through repeat orders during the paid advertising period.',
+        'Bridged Chinese-Indonesian business communication by interpreting customer specifications, product requirements, and visual references into clear Indonesian information for internal sales and production coordination.',
+        'Developed and executed social media content strategies, including content ideation, planning, and coordination, to strengthen brand visibility and attract potential B2B clients.',
+        'Supported new market development and existing account growth through export sales activities, including responding to client needs, preparing offers, coordinating with internal teams, and identifying opportunities for additional product offerings and repeat orders.',
+        'Coordinated across marketing, sales, production, and external partners to address customer requirements and resolve order-related operational issues.',
       ],
     },
     {
@@ -107,8 +110,8 @@ export default function CareerTrajectory() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2 text-xs font-semibold text-[#78716C] tracking-wide self-start md:self-auto">
-                    <span>{exp.period} • {exp.location}</span>
+                  <div className="flex items-center gap-2 text-xs font-semibold text-[#78716C] tracking-wide self-start md:self-auto shrink-0">
+                    <span>{exp.location ? `${exp.period} | ${exp.location}` : exp.period}</span>
                     <span className="p-1 rounded-full text-[#111827] group-hover:text-[#FF5E13] transition-colors">
                       {isExpanded ? <ChevronDown size={18} /> : <ChevronRight size={18} />}
                     </span>

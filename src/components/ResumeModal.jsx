@@ -104,14 +104,16 @@ export default function ResumeModal({ isOpen, onClose }) {
             <div>
               <div className="flex justify-between items-baseline flex-wrap gap-1">
                 <h4 className="font-bold text-sm text-[#111827]">
-                  Account Executive (Local & Export) — PT Alkindo Naratama Tbk
+                  Account Executive - Marketing and Sales (Local and Export) — PT. Alkindo Naratama Tbk
                 </h4>
-                <span className="text-xs text-[#78716C]">July 2025 – Present</span>
+                <span className="text-xs text-[#78716C]">July 2025 – Present | Padalarang, West Java</span>
               </div>
               <ul className="list-disc list-inside text-xs text-[#4B5563] mt-2 space-y-1.5 leading-relaxed">
-                <li>Directly contributed to and managed accounts totaling <strong>Rp 229M+</strong> in revenue exposure across packaging converters and industrial packaging clients.</li>
-                <li>Architected inbound lead qualification funnel integrating Meta enterprise campaigns with WhatsApp & CRM routing, reducing lead response time to 15 minutes.</li>
-                <li>Conducted direct technical specification alignment in Mandarin Chinese with overseas suppliers, eliminating 40% of latency and sample return cycles.</li>
+                <li>Managed high-volume client communications across international and local customers, handling hundreds of inquiries and supporting sales conversion, customer relationships, and repeat business; contributed to <strong>Rp229.65M</strong> in revenue from initial purchase orders through repeat orders during the paid advertising period.</li>
+                <li>Bridged Chinese-Indonesian business communication by interpreting customer specifications, product requirements, and visual references into clear Indonesian information for internal sales and production coordination.</li>
+                <li>Developed and executed social media content strategies to strengthen brand visibility and attract potential B2B clients.</li>
+                <li>Supported new market development and existing account growth through export sales activities, including preparing offers, coordinating with internal teams, and identifying opportunities for additional product offerings and repeat orders.</li>
+                <li>Coordinated across marketing, sales, production, and external partners to address customer requirements and resolve order-related operational issues.</li>
               </ul>
             </div>
 
