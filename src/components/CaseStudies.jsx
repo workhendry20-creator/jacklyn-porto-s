@@ -167,11 +167,10 @@ export default function CaseStudies({ onRequestCaseFile }) {
                   <button
                     key={st.stage}
                     onClick={() => setActiveStage(index)}
-                    className={`text-left p-3.5 sm:p-4 rounded-xl border transition-all duration-200 cursor-pointer flex flex-col justify-between ${
-                      isSelected
+                    className={`text-left p-3.5 sm:p-4 rounded-xl border transition-all duration-200 cursor-pointer flex flex-col justify-between ${isSelected
                         ? 'bg-white border-[#FF5E13] shadow-[0_8px_20px_-6px_rgba(255,94,19,0.2)] ring-1 ring-[#FF5E13]'
                         : 'bg-white/70 border-[#EAE5DC] hover:bg-white hover:border-[#FF5E13]/40'
-                    }`}
+                      }`}
                   >
                     <div>
                       <div className="flex items-center justify-between mb-1.5">
@@ -237,21 +236,6 @@ export default function CaseStudies({ onRequestCaseFile }) {
               </div>
             </div>
           </div>
-
-          {/* Bottom Card Footer */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 text-xs">
-            <div className="flex items-center gap-2 text-[#615E57]">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5E13]"></span>
-              <span>Framework fully integrated into core sales operational procedures.</span>
-            </div>
-            <button
-              onClick={() => onRequestCaseFile('PT Alkindo Naratama Tbk - Turn Paid Traffic Into Business Conversations')}
-              className="inline-flex items-center gap-1 font-semibold text-[#FF5E13] hover:text-[#A93800] transition-colors cursor-pointer group self-start sm:self-auto"
-            >
-              <span>Request Full Documentation Case File</span>
-              <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </button>
-          </div>
         </div>
 
         {/* ========================================================================= */}
@@ -289,21 +273,19 @@ export default function CaseStudies({ onRequestCaseFile }) {
                   <div className="flex items-center gap-1 bg-white p-0.5 rounded-full border border-[#EAE5DC]">
                     <button
                       onClick={() => setViewMode('before')}
-                      className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full transition-colors cursor-pointer ${
-                        viewMode === 'before'
+                      className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full transition-colors cursor-pointer ${viewMode === 'before'
                           ? 'bg-[#111827] text-white'
                           : 'text-[#615E57] hover:text-[#111827]'
-                      }`}
+                        }`}
                     >
                       Before
                     </button>
                     <button
                       onClick={() => setViewMode('after')}
-                      className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full transition-colors cursor-pointer ${
-                        viewMode === 'after'
+                      className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full transition-colors cursor-pointer ${viewMode === 'after'
                           ? 'bg-[#FF5E13] text-white'
                           : 'text-[#615E57] hover:text-[#111827]'
-                      }`}
+                        }`}
                     >
                       After (Matrix)
                     </button>
@@ -457,11 +439,10 @@ export default function CaseStudies({ onRequestCaseFile }) {
                     <button
                       key={phase.id}
                       onClick={() => setActiveFunnel(phase.id)}
-                      className={`p-2 rounded-xl text-left border transition-all cursor-pointer ${
-                        activeFunnel === phase.id
+                      className={`p-2 rounded-xl text-left border transition-all cursor-pointer ${activeFunnel === phase.id
                           ? 'bg-white border-[#FF5E13] font-bold text-[#111827] shadow-xs'
                           : 'bg-white/50 border-[#EAE5DC] text-[#615E57] hover:bg-white'
-                      }`}
+                        }`}
                     >
                       <div className="font-bold text-[10px]">{phase.title}</div>
                       <div className="text-[9px] text-[#78716C]">{phase.desc}</div>
