@@ -16,11 +16,9 @@ export default function Footer({ onNavigate }) {
           {/* Col 1: Brand & Executive Summary (5 cols) */}
           <div className="md:col-span-5 space-y-3">
             <div className="flex items-center gap-2.5">
-              <div className="w-7 h-7 rounded-lg bg-[#111827] text-white flex items-center justify-center font-serif font-bold text-xs tracking-tighter">
-                TW
-              </div>
+
               <span className="font-serif font-bold text-base text-[#111827]">
-                Tamara Wongso
+                Jacklyn Tamara
               </span>
             </div>
             <p className="text-xs text-[#615E57] max-w-sm leading-relaxed">
@@ -78,19 +76,15 @@ export default function Footer({ onNavigate }) {
               work.tmraa@gmail.com
             </p>
             <p className="text-[#615E57]">
-              San Francisco, CA & Global/Remote
+              Bandung, West Java, Indonesia
             </p>
-            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-[#E1E8FD] text-[#293040] text-[10px] font-semibold mt-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5E13]"></span>
-              <span>Q3 Strategic Advisory Open</span>
-            </div>
           </div>
         </div>
 
         {/* Bottom Row */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#78716C]">
           <div>
-            © {new Date().getFullYear()} Tamara Wongso. Editorial portfolio & executive advisory.
+            © {new Date().getFullYear()} Tamara Wongso.
           </div>
           <div className="flex items-center gap-4 font-semibold tracking-wider text-[10px] uppercase">
             <a
@@ -106,14 +100,14 @@ export default function Footer({ onNavigate }) {
               href="#about"
               className="hover:text-[#FF5E13] transition-colors"
             >
-              Substack
+              About
             </a>
             <span>•</span>
             <a
               href="#contact"
               className="hover:text-[#FF5E13] transition-colors"
             >
-              Briefing
+              Contact
             </a>
           </div>
         </div>

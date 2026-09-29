@@ -105,9 +105,7 @@ export default function CaseStudies({ onRequestCaseFile }) {
               Featured Case Studies
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#615E57] max-w-md leading-relaxed md:text-right">
-            Deep-dive playbooks into enterprise inbound conversions, cross-border manufacturing operations, and city-scale user acquisition.
-          </p>
+
         </div>
 
         {/* ========================================================================= */}
@@ -184,8 +182,8 @@ export default function CaseStudies({ onRequestCaseFile }) {
                     key={st.stage}
                     onClick={() => setActiveStage(index)}
                     className={`text-left p-3.5 sm:p-4 rounded-xl border transition-all duration-200 cursor-pointer flex flex-col justify-between ${isSelected
-                        ? 'bg-white border-[#FF5E13] shadow-[0_8px_20px_-6px_rgba(255,94,19,0.2)] ring-1 ring-[#FF5E13]'
-                        : 'bg-white/70 border-[#EAE5DC] hover:bg-white hover:border-[#FF5E13]/40'
+                      ? 'bg-white border-[#FF5E13] shadow-[0_8px_20px_-6px_rgba(255,94,19,0.2)] ring-1 ring-[#FF5E13]'
+                      : 'bg-white/70 border-[#EAE5DC] hover:bg-white hover:border-[#FF5E13]/40'
                       }`}
                   >
                     <div>
@@ -299,11 +297,10 @@ export default function CaseStudies({ onRequestCaseFile }) {
                       <button
                         key={step.id}
                         onClick={() => setActiveIpoTab(step.id)}
-                        className={`p-2 sm:p-2.5 rounded-xl text-left border transition-all cursor-pointer ${
-                          isSelected
-                            ? 'bg-white border-[#FF5E13] shadow-xs ring-1 ring-[#FF5E13]'
-                            : 'bg-white/60 border-[#EAE5DC] hover:bg-white text-[#615E57]'
-                        }`}
+                        className={`p-2 sm:p-2.5 rounded-xl text-left border transition-all cursor-pointer ${isSelected
+                          ? 'bg-white border-[#FF5E13] shadow-xs ring-1 ring-[#FF5E13]'
+                          : 'bg-white/60 border-[#EAE5DC] hover:bg-white text-[#615E57]'
+                          }`}
                       >
                         <div className={`text-[10px] font-bold ${isSelected ? 'text-[#FF5E13]' : 'text-[#78716C]'}`}>
                           {step.label}
@@ -330,21 +327,6 @@ export default function CaseStudies({ onRequestCaseFile }) {
                     {ipoWorkflow.find((s) => s.id === activeIpoTab)?.desc}
                   </p>
                 </div>
-
-                {/* Real Data Showcase Box (Bilingual Dimension Conversion Example from PDF) */}
-                <div className="bg-white p-3.5 rounded-xl border border-[#EAE5DC] space-y-2">
-                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#111827]">
-                    Converts US/Chinese Customer Specs (Inches) to Company Internal Production Formulas (mm)
-                  </div>
-                  <div className="bg-[#FAF7F2] p-2.5 rounded-lg border border-[#EAE5DC] font-mono text-xs font-semibold text-[#FF5E13] flex items-center justify-between flex-wrap gap-2">
-                    <span className="text-[#615E57]">10&quot; x 6.75&quot; x 12&quot;</span>
-                    <span className="text-[#111827]">➔</span>
-                    <span>254.00 mm x 171.45 mm x 304.80 mm</span>
-                  </div>
-                  <p className="text-[11px] text-[#615E57] leading-relaxed">
-                    Direct interpretation without third-party delay to avoid specification errors between client expectations and factory output.
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -352,7 +334,7 @@ export default function CaseStudies({ onRequestCaseFile }) {
             <div className="flex items-center justify-between pt-3 border-t border-[#EAE5DC] text-xs">
               <span className="text-[#615E57]">Export & Local B2B Account Management</span>
               <span className="font-bold text-xs text-[#111827] bg-[#F1EDE4] px-3 py-1 rounded-full">
-                Chinese-Indonesian Business Communication
+                Business Communication
               </span>
             </div>
           </div>
@@ -430,8 +412,8 @@ export default function CaseStudies({ onRequestCaseFile }) {
                       key={phase.id}
                       onClick={() => setActiveFunnel(phase.id)}
                       className={`p-2 rounded-xl text-left border transition-all cursor-pointer ${activeFunnel === phase.id
-                          ? 'bg-white border-[#FF5E13] font-bold text-[#111827] shadow-xs'
-                          : 'bg-white/50 border-[#EAE5DC] text-[#615E57] hover:bg-white'
+                        ? 'bg-white border-[#FF5E13] font-bold text-[#111827] shadow-xs'
+                        : 'bg-white/50 border-[#EAE5DC] text-[#615E57] hover:bg-white'
                         }`}
                     >
                       <div className="font-bold text-[10px]">{phase.title}</div>

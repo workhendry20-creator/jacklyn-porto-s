@@ -80,9 +80,7 @@ export default function CareerTrajectory() {
               Experience & Practice
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#615E57] max-w-md leading-relaxed md:text-right">
-            Proven commercial impact across publicly listed manufacturers, hyper-growth tech giants, and grassroots movements.
-          </p>
+
         </div>
 
         {/* Experience List Cards */}

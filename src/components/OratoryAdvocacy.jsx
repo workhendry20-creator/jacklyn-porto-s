@@ -109,9 +109,7 @@ export default function OratoryAdvocacy() {
           <h2 className="font-serif font-bold text-3xl sm:text-4xl lg:text-[44px] tracking-tight text-[#111827] uppercase mb-3">
             Public Speaking & Dialogue
           </h2>
-          <p className="text-xs sm:text-sm text-[#615E57] leading-relaxed">
-            Facilitating impactful discourse on commercial acumen, international negotiations, and early-career career scaling.
-          </p>
+
         </div>
 
         {/* 2-Column Bento Layout */}
@@ -157,11 +155,10 @@ export default function OratoryAdvocacy() {
                           setCurrentTime(Math.floor((i / waveformHeights.length) * duration));
                         }}
                         style={{ height: `${h}%` }}
-                        className={`w-full rounded-full cursor-pointer transition-all duration-200 ${
-                          isPassed
+                        className={`w-full rounded-full cursor-pointer transition-all duration-200 ${isPassed
                             ? 'bg-[#FF5E13]'
                             : 'bg-[#D1D5DB] hover:bg-[#9CA3AF]'
-                        } ${isPlaying ? 'audio-bar-playing' : ''}`}
+                          } ${isPlaying ? 'audio-bar-playing' : ''}`}
                         title={`Seek to ${formatTime((i / waveformHeights.length) * duration)}`}
                       />
                     );

@@ -56,7 +56,7 @@ export default function ResumeModal({ isOpen, onClose }) {
                 <Phone size={12} className="text-[#FF5E13]" /> +62 812-5072-6062
               </span>
               <span className="flex items-center gap-1">
-                <MapPin size={12} className="text-[#FF5E13]" /> Bandung / Jakarta / Global Remote
+                <MapPin size={12} className="text-[#FF5E13]" /> Bandung, Indonesia / Global Remote
               </span>
             </div>
           </div>
@@ -152,8 +152,8 @@ export default function ResumeModal({ isOpen, onClose }) {
                 Education
               </h3>
               <div className="text-xs">
-                <div className="font-bold text-[#111827]">Universitas Katolik Parahyangan (UNPAR)</div>
-                <div className="text-[#615E57]">International Relations / Strategic Business</div>
+                <div className="font-bold text-[#111827]">Pasundan University</div>
+                <div className="text-[#615E57]">International Relations</div>
                 <div className="text-[11px] text-[#78716C]">Delegate, United Nations Academic Impact (UNAI)</div>
               </div>
             </div>
