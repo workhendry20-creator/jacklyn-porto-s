@@ -17,9 +17,8 @@ export default function CaseStudies({ onRequestCaseFile }) {
   // Card 1: Active Flow Stage
   const [activeStage, setActiveStage] = useState(0);
 
-  // Card 2: Interactive Before/After Toggle / Slider
-  const [viewMode, setViewMode] = useState('after'); // 'before' | 'after'
-  const [showGlossary, setShowGlossary] = useState(false);
+  // Card 2: Interactive I-P-O Matrix Tab
+  const [activeIpoTab, setActiveIpoTab] = useState('process');
 
   // Card 3: Active Funnel Tab
   const [activeFunnel, setActiveFunnel] = useState(1);
@@ -69,11 +68,28 @@ export default function CaseStudies({ onRequestCaseFile }) {
     'Bridged Chinese-Indonesian business communication by translating technical specifications into production formulas.',
   ];
 
-  const glossaryTerms = [
-    { zh: '抗张强度', pinyin: 'Kàngzhāng qiángdù', en: 'Tensile Strength', id: 'Kekuatan Tarik', note: 'Standard ISO 1924-2 untuk ketahanan tarik lembaran karton box.' },
-    { zh: '耐破指数', pinyin: 'Nàipò zhǐshù', en: 'Bursting Index', id: 'Indeks Jebol / Tekan', note: 'Mullen test specification (≥ 3.8 kPa·m²/g) diselaraskan langsung ke operator corrugator.' },
-    { zh: '环压强度', pinyin: 'Huányā qiángdù', en: 'Ring Crush Test (RCT)', id: 'Kekuatan Tekan Cincin', note: 'Uji kekuatan penopang beban vertikal pada flute bergelombang.' },
-    { zh: '水分含量', pinyin: 'Shuǐfèn hánliàng', en: 'Moisture Content', id: 'Kadar Air', note: 'Standarisasi kelembapan 7.5% ± 1.0% guna mencegah laminasi warping.' },
+  const ipoWorkflow = [
+    {
+      id: 'input',
+      label: 'INPUT',
+      title: 'Client Specifications & Visuals',
+      desc: 'Mandarin specifications, US customer product requirements, measurements (inch), references, and visuals.',
+      badge: 'Client Inbound',
+    },
+    {
+      id: 'process',
+      label: 'PROCESS',
+      title: 'Interpretation & Localization',
+      desc: 'Interpretation, clarification, localization, formatting, and conversion into internal company formulas.',
+      badge: 'Bilingual Engineering',
+    },
+    {
+      id: 'output',
+      label: 'OUTPUT',
+      title: 'Factory-Ready Production Specs',
+      desc: 'Clearer localized requirements and formulas for internal sales, production coordination, and mill batch controls.',
+      badge: 'Actionable Specs',
+    },
   ];
 
   return (
@@ -243,126 +259,100 @@ export default function CaseStudies({ onRequestCaseFile }) {
         {/* ========================================================================= */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* ------------------------------------------------------------- */}
-          {/* Card 2: Export Operations (Cross-Border Spec Translation) */}
+          {/* Card 2: International Client Requirements & Spec Translation */}
           {/* ------------------------------------------------------------- */}
           <div className="glass-card rounded-[2rem] p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:border-[#FF5E13]/30">
             <div>
               {/* Category tags */}
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-[#F9FAFB] text-[#111827] border border-[#EAE5DC]">
-                  Operations & Negotiation
+              <div className="flex items-center gap-2 mb-3 flex-wrap">
+                <span className="text-[11px] font-bold px-3 py-1 rounded-full bg-[#FFECE5] text-[#A93800] border border-[#FFDBCE]">
+                  B2B Client Communication & Alignment
                 </span>
                 <span className="text-xs font-semibold text-[#615E57]">
-                  Export Protocols
+                  PT Alkindo Naratama Tbk
                 </span>
               </div>
 
               <h3 className="font-serif font-bold text-xl sm:text-2xl text-[#111827] tracking-tight mb-2.5">
-                Cross-Border Spec Translation & Factory Alignment
+                From International Client Requirements to Actionable Business Information
               </h3>
               <p className="text-xs sm:text-sm text-[#4B5563] leading-relaxed mb-6">
-                Reconciled discrepancies between Chinese technical mill sheets and US customer quality tolerances, reducing domestic sample rejection cycles.
+                Handling Chinese and US customer specifications, measurements, and visual references, interpreting the requirements, and translating them into clear actionable information for internal sales and production coordination.
               </p>
 
-              {/* Interactive Before / After Comparison Bar */}
+              {/* Interactive Workflow / Input-Process-Output Matrix */}
               <div className="bg-[#F9FAFB] p-4 rounded-2xl border border-[#EAE5DC] mb-5">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-[#615E57]">
-                    SLA Comparison Metric
+                    Workflow Architecture (I-P-O Matrix)
                   </span>
-                  <div className="flex items-center gap-1 bg-white p-0.5 rounded-full border border-[#EAE5DC]">
-                    <button
-                      onClick={() => setViewMode('before')}
-                      className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full transition-colors cursor-pointer ${viewMode === 'before'
-                          ? 'bg-[#111827] text-white'
-                          : 'text-[#615E57] hover:text-[#111827]'
-                        }`}
-                    >
-                      Before
-                    </button>
-                    <button
-                      onClick={() => setViewMode('after')}
-                      className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full transition-colors cursor-pointer ${viewMode === 'after'
-                          ? 'bg-[#FF5E13] text-white'
-                          : 'text-[#615E57] hover:text-[#111827]'
-                        }`}
-                    >
-                      After (Matrix)
-                    </button>
-                  </div>
+                  <span className="text-[10px] font-bold text-[#FF5E13] bg-[#FFECE5] px-2 py-0.5 rounded-full">
+                    Input ➔ Process ➔ Output
+                  </span>
                 </div>
 
-                {/* Progress Comparison Bars */}
-                <div className="space-y-3 mb-4">
-                  {/* Before Bar */}
-                  <div>
-                    <div className="flex justify-between text-[11px] mb-1">
-                      <span className="font-semibold text-[#78716C]">BEFORE: MANUAL TRANSLATION GAP</span>
-                      <span className="font-bold text-[#DC2626]">12-Day Turnaround</span>
-                    </div>
-                    <div className="w-full bg-[#E5E7EB] h-2.5 rounded-full overflow-hidden">
-                      <div
-                        className="bg-[#F87171] h-full rounded-full transition-all duration-700"
-                        style={{ width: viewMode === 'before' ? '85%' : '85%' }}
-                      />
-                    </div>
-                  </div>
-
-                  {/* After Bar */}
-                  <div>
-                    <div className="flex justify-between text-[11px] mb-1">
-                      <span className="font-semibold text-[#111827]">AFTER: WONGSO BILINGUAL MATRIX</span>
-                      <span className="font-bold text-[#FF5E13]">48 Hr. Efficiency Gain</span>
-                    </div>
-                    <div className="w-full bg-[#E5E7EB] h-2.5 rounded-full overflow-hidden">
-                      <div
-                        className="bg-[#FF5E13] h-full rounded-full transition-all duration-700"
-                        style={{ width: viewMode === 'after' ? '22%' : '40%' }}
-                      />
-                    </div>
-                  </div>
+                {/* 3 Step Interactive Buttons */}
+                <div className="grid grid-cols-3 gap-1.5 mb-3">
+                  {ipoWorkflow.map((step) => {
+                    const isSelected = activeIpoTab === step.id;
+                    return (
+                      <button
+                        key={step.id}
+                        onClick={() => setActiveIpoTab(step.id)}
+                        className={`p-2 sm:p-2.5 rounded-xl text-left border transition-all cursor-pointer ${
+                          isSelected
+                            ? 'bg-white border-[#FF5E13] shadow-xs ring-1 ring-[#FF5E13]'
+                            : 'bg-white/60 border-[#EAE5DC] hover:bg-white text-[#615E57]'
+                        }`}
+                      >
+                        <div className={`text-[10px] font-bold ${isSelected ? 'text-[#FF5E13]' : 'text-[#78716C]'}`}>
+                          {step.label}
+                        </div>
+                        <div className="text-[11px] font-semibold text-[#111827] truncate mt-0.5">
+                          {step.title}
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
 
-                {/* Callout Box */}
-                <div className="bg-white p-3 rounded-xl border border-[#EAE5DC] flex items-start gap-2.5 text-xs text-[#374151]">
-                  <Sparkles size={16} className="text-[#FF5E13] shrink-0 mt-0.5" />
-                  <p className="leading-relaxed">
-                    Direct translation of Mandarin tensile specifications (抗张强度 / 耐破指数) directly into Indonesian mill batch controls without third-party delay.
+                {/* Active Step Content */}
+                <div className="bg-white p-3.5 rounded-xl border border-[#EAE5DC] mb-4 text-xs">
+                  <div className="flex items-center justify-between mb-1.5">
+                    <span className="font-bold text-[#111827] uppercase text-[11px]">
+                      {ipoWorkflow.find((s) => s.id === activeIpoTab)?.label}: {ipoWorkflow.find((s) => s.id === activeIpoTab)?.title}
+                    </span>
+                    <span className="text-[10px] bg-[#F9FAFB] px-2 py-0.5 rounded border border-[#EAE5DC] font-semibold text-[#615E57]">
+                      {ipoWorkflow.find((s) => s.id === activeIpoTab)?.badge}
+                    </span>
+                  </div>
+                  <p className="text-[#4B5563] leading-relaxed">
+                    {ipoWorkflow.find((s) => s.id === activeIpoTab)?.desc}
                   </p>
                 </div>
 
-                {/* Interactive Glossary Accordion Toggle */}
-                <div className="mt-3 pt-2 border-t border-[#EAE5DC]">
-                  <button
-                    onClick={() => setShowGlossary(!showGlossary)}
-                    className="w-full flex items-center justify-between text-[11px] font-semibold text-[#A93800] hover:text-[#FF5E13] transition-colors cursor-pointer py-1"
-                  >
-                    <span>View Bilingual Technical Mill Specs ({glossaryTerms.length} terms)</span>
-                    {showGlossary ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                  </button>
-
-                  {showGlossary && (
-                    <div className="mt-2 space-y-1.5 pt-2 border-t border-[#F1EDE4]">
-                      {glossaryTerms.map((t) => (
-                        <div key={t.zh} className="bg-white p-2 rounded-lg border border-[#EAE5DC] text-[11px]">
-                          <div className="flex items-center justify-between">
-                            <span className="font-bold text-[#111827]">{t.zh} ({t.pinyin})</span>
-                            <span className="font-semibold text-[#FF5E13]">{t.en}</span>
-                          </div>
-                          <p className="text-[#615E57] text-[10px] mt-0.5">{t.note}</p>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                {/* Real Data Showcase Box (Bilingual Dimension Conversion Example from PDF) */}
+                <div className="bg-white p-3.5 rounded-xl border border-[#EAE5DC] space-y-2">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#111827]">
+                    Converts US/Chinese Customer Specs (Inches) to Company Internal Production Formulas (mm)
+                  </div>
+                  <div className="bg-[#FAF7F2] p-2.5 rounded-lg border border-[#EAE5DC] font-mono text-xs font-semibold text-[#FF5E13] flex items-center justify-between flex-wrap gap-2">
+                    <span className="text-[#615E57]">10&quot; x 6.75&quot; x 12&quot;</span>
+                    <span className="text-[#111827]">➔</span>
+                    <span>254.00 mm x 171.45 mm x 304.80 mm</span>
+                  </div>
+                  <p className="text-[11px] text-[#615E57] leading-relaxed">
+                    Direct interpretation without third-party delay to avoid specification errors between client expectations and factory output.
+                  </p>
                 </div>
               </div>
             </div>
 
             {/* Bottom Row */}
             <div className="flex items-center justify-between pt-3 border-t border-[#EAE5DC] text-xs">
-              <span className="text-[#615E57]">Paper & Industrial Packaging</span>
-              <span className="font-bold text-sm text-[#FF5E13] bg-[#FFECE5] px-2.5 py-0.5 rounded-full">
-                -40% Latency
+              <span className="text-[#615E57]">Export & Local B2B Account Management</span>
+              <span className="font-bold text-xs text-[#111827] bg-[#F1EDE4] px-3 py-1 rounded-full">
+                Chinese-Indonesian Business Communication
               </span>
             </div>
           </div>

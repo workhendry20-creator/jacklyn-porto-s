@@ -48,11 +48,10 @@ export default function Navbar({ onContactClick, onResumeClick }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-[#EAE5DC] shadow-[0_4px_20px_rgba(0,0,0,0.03)] py-3'
-          : 'bg-white/80 backdrop-blur-sm border-b border-[#EAE5DC]/50 py-4'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-white/95 backdrop-blur-md border-b border-[#EAE5DC] shadow-[0_4px_20px_rgba(0,0,0,0.03)] py-3'
+        : 'bg-white/80 backdrop-blur-sm border-b border-[#EAE5DC]/50 py-4'
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 flex items-center justify-between">
         {/* Brand Monogram & Name */}
@@ -60,11 +59,9 @@ export default function Navbar({ onContactClick, onResumeClick }) {
           onClick={() => scrollTo('about')}
           className="flex items-center gap-2.5 group text-left cursor-pointer focus:outline-none"
         >
-          <div className="w-8 h-8 rounded-lg bg-[#111827] text-white flex items-center justify-center font-serif font-bold text-sm tracking-tighter group-hover:bg-[#FF5E13] transition-colors">
-            TW
-          </div>
+
           <span className="font-serif font-bold text-lg text-[#111827] tracking-tight group-hover:text-[#FF5E13] transition-colors">
-            Tamara Wongso
+            Jacklyn Potofolio's
           </span>
         </button>
 
@@ -76,11 +73,10 @@ export default function Navbar({ onContactClick, onResumeClick }) {
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className={`px-4 py-1.5 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${
-                  isActive
-                    ? 'bg-[#FF5E13] text-white shadow-xs'
-                    : 'text-[#615E57] hover:text-[#111827] hover:bg-white/60'
-                }`}
+                className={`px-4 py-1.5 text-xs font-semibold rounded-full transition-all duration-200 cursor-pointer ${isActive
+                  ? 'bg-[#FF5E13] text-white shadow-xs'
+                  : 'text-[#615E57] hover:text-[#111827] hover:bg-white/60'
+                  }`}
               >
                 {item.label}
               </button>
@@ -136,11 +132,10 @@ export default function Navbar({ onContactClick, onResumeClick }) {
               <button
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
-                className={`text-left py-2.5 px-3 rounded-lg text-sm font-medium transition-colors ${
-                  activeSection === item.id
-                    ? 'bg-[#FF5E13] text-white'
-                    : 'text-[#141B2B] hover:bg-[#EAE5DC]/50'
-                }`}
+                className={`text-left py-2.5 px-3 rounded-lg text-sm font-medium transition-colors ${activeSection === item.id
+                  ? 'bg-[#FF5E13] text-white'
+                  : 'text-[#141B2B] hover:bg-[#EAE5DC]/50'
+                  }`}
               >
                 {item.label}
               </button>
