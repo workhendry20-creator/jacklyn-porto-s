@@ -14,7 +14,6 @@ export default function CareerTrajectory() {
       role: 'Account Executive (Local & Export)',
       company: 'PT Alkindo Naratama Tbk',
       period: '2025 — PRESENT',
-      location: 'SAN FRANCISCO / BANDUNG',
       desc: 'Managing key account retention and outbound enterprise packaging contracts across Southeast Asia. Spearheading cross-border technical alignment with Mandarin Chinese suppliers and North American client quality assurance teams.',
       skills: [
         { label: 'B2B Sales', featured: false },
@@ -32,9 +31,8 @@ export default function CareerTrajectory() {
     {
       id: 'gojek',
       role: 'Marketing Community Manager Intern',
-      company: 'Gojek Indonesia',
+      company: 'Gojek Bandung',
       period: '2024 — 2025',
-      location: 'REGIONAL WEST JAVA',
       desc: 'Directed regional youth segment activations across 25+ academic institutions. Coordinated cross-functional marketing collateral, negotiated sponsor slots, and managed on-ground student representative networks.',
       skills: [
         { label: 'Youth Segment Activation', featured: false },
@@ -53,7 +51,6 @@ export default function CareerTrajectory() {
       role: 'Founder & Initiator',
       company: 'Hareudang Bandung',
       period: '2023 — 2025',
-      location: 'BANDUNG',
       desc: 'Founded an independent creative and cultural collective. Grew community engagement from zero to 15,000+ digital reach, landing commercial sponsorships from regional beverage and lifestyle brands.',
       skills: [
         { label: 'Brand Strategy', featured: false },
@@ -143,11 +140,10 @@ export default function CareerTrajectory() {
                   {exp.skills.map((s, idx) => (
                     <span
                       key={idx}
-                      className={`text-[11px] font-medium px-3 py-1 rounded-full border transition-all ${
-                        s.featured
-                          ? 'bg-[#FFECE5] text-[#A93800] border-[#FFDBCE] font-bold'
-                          : 'bg-[#F9FAFB] text-[#4B5563] border-[#EAE5DC] hover:border-[#FF5E13]/30'
-                      }`}
+                      className={`text-[11px] font-medium px-3 py-1 rounded-full border transition-all ${s.featured
+                        ? 'bg-[#FFECE5] text-[#A93800] border-[#FFDBCE] font-bold'
+                        : 'bg-[#F9FAFB] text-[#4B5563] border-[#EAE5DC] hover:border-[#FF5E13]/30'
+                        }`}
                     >
                       {s.label}
                     </span>

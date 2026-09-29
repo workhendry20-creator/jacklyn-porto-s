@@ -66,7 +66,7 @@ export default function KeyMetrics() {
       val: countRevenue,
       suffix: 'M',
       plus: '+',
-      description: 'Revenue Exposure & Contributed across national and multinational B2B accounts.',
+      description: 'Revenue Through Digital Marketing & Contributed across national and multinational B2B accounts.',
       subnote: 'PT Alkindo Naratama Tbk',
     },
     {

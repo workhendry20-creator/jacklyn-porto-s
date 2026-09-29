@@ -163,7 +163,7 @@ export default function ResumeModal({ isOpen, onClose }) {
               <div className="text-xs space-y-1">
                 <div><strong>Indonesian:</strong> Native proficiency</div>
                 <div><strong>English:</strong> Professional Working Proficiency</div>
-                <div><strong>Mandarin Chinese:</strong> Advanced Business & Technical Packaging Specs</div>
+                <div><strong>Mandarin Chinese:</strong> Beginner Technical</div>
               </div>
             </div>
           </div>

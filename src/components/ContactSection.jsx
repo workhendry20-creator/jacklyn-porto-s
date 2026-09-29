@@ -18,7 +18,7 @@ const InstagramIcon = () => (
 
 const BehanceIcon = () => (
   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-    <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-4.048 0-5.625-3.08-5.625-5.909 0-3.376 2.05-6.091 5.625-6.091 4.148 0 5.375 3.037 5.375 6.091 0 .285-.015.656-.036.877h-8.082c.075 1.761 1.055 2.651 2.766 2.651 1.309 0 2.215-.536 2.706-1.619h2.372zm-5.228-4.275c-.079-1.284-.799-2.067-2.091-2.067-1.391 0-2.121.848-2.298 2.067h4.389zm-13.498 7.275h-5v-16h5.811c2.81 0 4.689 1.488 4.689 4.152 0 1.583-.757 2.775-1.996 3.447 1.636.568 2.496 2.097 2.496 3.966 0 2.875-2.039 4.435-6 4.435zm-2.5-9.333h2.645c1.477 0 2.484-.52 2.484-1.85 0-1.246-.948-1.817-2.387-1.817h-2.742v3.667zm0 2.247v4.172h2.894c1.554 0 2.678-.584 2.678-2.046 0-1.503-1.09-2.126-2.651-2.126h-2.921z"/>
+    <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-4.048 0-5.625-3.08-5.625-5.909 0-3.376 2.05-6.091 5.625-6.091 4.148 0 5.375 3.037 5.375 6.091 0 .285-.015.656-.036.877h-8.082c.075 1.761 1.055 2.651 2.766 2.651 1.309 0 2.215-.536 2.706-1.619h2.372zm-5.228-4.275c-.079-1.284-.799-2.067-2.091-2.067-1.391 0-2.121.848-2.298 2.067h4.389zm-13.498 7.275h-5v-16h5.811c2.81 0 4.689 1.488 4.689 4.152 0 1.583-.757 2.775-1.996 3.447 1.636.568 2.496 2.097 2.496 3.966 0 2.875-2.039 4.435-6 4.435zm-2.5-9.333h2.645c1.477 0 2.484-.52 2.484-1.85 0-1.246-.948-1.817-2.387-1.817h-2.742v3.667zm0 2.247v4.172h2.894c1.554 0 2.678-.584 2.678-2.046 0-1.503-1.09-2.126-2.651-2.126h-2.921z" />
   </svg>
 );
 
@@ -52,23 +52,20 @@ export default function ContactSection({ onEmailCopied }) {
     {
       id: 'linkedin',
       name: 'LinkedIn',
-      handle: '/in/jacklyntamaraw',
       url: 'https://www.linkedin.com/in/jacklyntamaraw/',
       icon: LinkedinIcon,
     },
     {
       id: 'instagram',
       name: 'Instagram',
-      handle: '@tmraa.w Creative Discourse',
-      url: 'https://instagram.com/tmraa.w',
+      url: 'https://instagram.com/tmeara__',
       icon: InstagramIcon,
     },
     {
-      id: 'behance',
-      name: 'Behance',
-      handle: 'Editorial & Creative Portfolio',
-      url: 'https://www.behance.net/',
-      icon: BehanceIcon,
+      id: 'email',
+      name: 'Email',
+      url: 'mailto:work.tmraa@gmail.com',
+      icon: Mail,
     },
   ];
 
@@ -129,7 +126,7 @@ export default function ContactSection({ onEmailCopied }) {
                   className="bg-white hover:bg-[#F9FAFB] text-[#111827] hover:text-[#FF5E13] border border-[#EAE5DC] hover:border-[#FF5E13]/50 text-xs sm:text-sm font-medium px-5 sm:px-6 py-3.5 rounded-full flex items-center gap-2 transition-all duration-300 hover:-translate-y-0.5 active:scale-95 shadow-xs"
                 >
                   <MessageSquare size={16} className="text-emerald-600" />
-                  <span>WhatsApp Direct ↗</span>
+                  <span>WhatsApp ↗</span>
                 </a>
               </div>
             </div>
